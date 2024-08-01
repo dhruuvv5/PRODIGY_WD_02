@@ -1,0 +1,84 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light cyan blue background */
+}
+
+.stopwatch-container {
+    text-align: center;
+}
+
+#stopwatch {
+    background: #ffffff; /* White background for stopwatch */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#time {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #00bcd4; /* Cyan blue color for time display */
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #00bcd4; /* Cyan blue color for buttons */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0097a7; /* Darker cyan blue for hover effect */
+}
+
+button:disabled {
+    background-color: #b0bec5; /* Light gray for disabled state */
+    cursor: not-allowed;
+}
+
+#laps {
+    background: #ffffff; /* White background for laps section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#lap-list {
+    list-style: none;
+    padding: 0;
+}
+
+#lap-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #00796b; /* Slightly dark cyan blue for lap times */
+}
+
+#lap-list li:last-child {
+    border-bottom: none;
+}
